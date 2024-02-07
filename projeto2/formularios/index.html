@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+</head>
+<body>
+
+    <h1>Formulários</h1>
+        <form>
+            <label for="pnome">Primeiro nome</label>
+            <input type="text" id="pnome" name="pname" placeholder="Seu primeiro nome" required>
+        <br><br>
+            <label for="sname">Segundo nome</label>
+            <input type="text" id="snome" name="sname" placeholder="Seu segundo nome" required>
+        <br><br>
+
+            <label>
+                <strong>Qual seu nivel da programação?</strong>
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="nível" value="Iniciante" checked>Sou iniciante
+            </label>
+            <label>
+                <input type="radio" name="nível" value="Médio">Estudo tem um tempo
+            </label>
+            <label>
+                <input type="radio" name="nível" value="Avançado">Experiente
+            </label>
+            <br><br>
+
+            <label for="escolaridade">
+                <strong>Sua escolaridade:</strong>
+            </label>
+            <select id="escolaridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Ensino Fundamental</option>
+                <option>Ensino Médio</option>
+                <option>Ensino Superior</option>
+            </select>
+            <br><br>
+
+            <label>
+                <strong>Selecione as tecnologias que você domina:</strong>
+            </label><br>
+
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+            <label for="tecnologia1">HTML</label>
+
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="JavaScript">
+            <label for="tecnologia2">JavaScript</label>
+            
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="CSS">
+            <label for="tecnologia3">CSS</label>
+
+        <br><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+</body>
+</html>
