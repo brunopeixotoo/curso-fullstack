@@ -7,56 +7,30 @@
 </head>
 <body>
 
-    <h1>Formulários</h1>
-        <form>
-            <label for="pnome">Primeiro nome</label>
-            <input type="text" id="pnome" name="pname" placeholder="Seu primeiro nome" required>
-        <br><br>
-            <label for="sname">Segundo nome</label>
-            <input type="text" id="snome" name="sname" placeholder="Seu segundo nome" required>
-        <br><br>
+    <header>
+        <h1>Cabeçalho da página</h1>
 
-            <label>
-                <strong>Qual seu nivel da programação?</strong>
-            </label>
-            <br>
-            <label>
-                <input type="radio" name="nível" value="Iniciante" checked>Sou iniciante
-            </label>
-            <label>
-                <input type="radio" name="nível" value="Médio">Estudo tem um tempo
-            </label>
-            <label>
-                <input type="radio" name="nível" value="Avançado">Experiente
-            </label>
-            <br><br>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contatos</li>
+                <li>Sobre</li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="escolaridade">
-                <strong>Sua escolaridade:</strong>
-            </label>
-            <select id="escolaridade" required>
-                <option selected disabled value="">Selecione</option>
-                <option>Ensino Fundamental</option>
-                <option>Ensino Médio</option>
-                <option>Ensino Superior</option>
-            </select>
-            <br><br>
+    <div>
+        <article>
+            <h3>Seja Bem-Vindo!</h3>
+        </article>
+        <aside>
+            <p>Treinando na prática o HTML Semântico</p>
+        </aside>
+    </div>
 
-            <label>
-                <strong>Selecione as tecnologias que você domina:</strong>
-            </label><br>
+    <footer>
+        <p>Todos os direitos reservados ao site. Rodapé.</p>
+    </footer>
 
-            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-            <label for="tecnologia1">HTML</label>
-
-            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="JavaScript">
-            <label for="tecnologia2">JavaScript</label>
-            
-            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="CSS">
-            <label for="tecnologia3">CSS</label>
-
-        <br><br>
-            <input type="submit" value="Cadastrar">
-        </form>
 </body>
 </html>
