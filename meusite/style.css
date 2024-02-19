@@ -1,12 +1,17 @@
-.primeiroh1 {
-    color: brown;
+body {
+    font-family: "Roboto", sans-serif;
 }
+.container {
+    background-color: #121212;
+    width: 700px;
+    color: #ffff;
+    margin: auto;
 
-#título {
-    color: blueviolet;
-}
+    /* O padding é utilizado para aplicar espaçamento interno */
+    padding: 30px;
 
-.primeiroh2 {
-    color: aqua;
-    font-style: italic;
+    /* O border é utilizado para estilização da borda do background*/
+    border: 5px solid red;
+    /*O border-radius vai arredondar a borda*/
+    border-radius: 10px;
 }
