@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -8,10 +12,42 @@ body {
     margin: auto;
 
     /* O padding é utilizado para aplicar espaçamento interno */
-    padding: 30px;
+    padding: 50px;
 
     /* O border é utilizado para estilização da borda do background*/
     border: 5px solid red;
     /*O border-radius vai arredondar a borda*/
     border-radius: 10px;
+}
+
+.rede-social h2{
+    /*Vai alinhar o texto na aplicação*/
+    text-align: center;
+}
+
+.rede-social ul {
+    /*Vai deixar em zero o espaçamento interno*/
+    padding:0;
+
+    /*Vai remover as bolinhas da lista não ordenada*/
+    list-style: none;
+
+    text-align: center;
+}
+
+.rede-social li {
+    /*Dando um espaçamento entre os links*/
+    margin-bottom: 12px;
+}
+
+.rede-social a {
+    /*Removendo a linha que fica abaixo da URL*/
+    text-decoration: none;
+    /*Alterando a cor do link na página*/
+    color: black;
+}
+
+/*O hover vai fazer alguma coisa quando passa o a seta do mouse por cima*/
+.rede-social a:hover {
+    color: red;
 }
