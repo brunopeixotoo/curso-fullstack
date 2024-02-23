@@ -1,0 +1,122 @@
+/*Fazendo o reset do CSS*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+/*Aplicando a estilização da fonte no Body*/
+body {
+    font-family: "Roboto", sans-serif;
+    
+}
+
+/*Início Header*/
+.nav {
+    background-color: rgb(54, 54, 54);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+}
+.nav-list a:hover {
+    color: black;
+}
+
+/*Fim do Header*/
+
+/*Início Main*/
+
+.main {
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url("../imagem/inicio.jpeg");
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+/*Título*/
+.main h1 {
+    color: white;
+    font-size: 54px;
+}
+/*slogan*/
+.main p{
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+/*buttom*/
+.call-to-action {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 0;
+    padding: 14px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    /*criando intervalo para o aumento do botão*/
+    transition: 0.9s;
+}
+/*buttom muda de tamanho quando usa o mouse*/
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+.main a{
+    text-decoration: none;
+    color: black;
+}
+/*Fim da MAIN*/
+
+/*Início do "Sobre"*/
+
+.about {
+    background-color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div {
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img{
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
