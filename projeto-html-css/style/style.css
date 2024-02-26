@@ -125,6 +125,25 @@ body {
     margin-bottom: 14px;
 }
 /*Fim do "Sobre"*/
+/*Vídeo*/
+.video{
+    width: 100%;
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.video h2 {
+    font-size: 32px;
+    padding-top: 40px;
+    padding-bottom: 80px
+
+}
+
+
 /*Início dos Projetos*/
 
 .projects {
@@ -172,19 +191,6 @@ body {
     transform: scale(1.1);
 }
 
-.action {
-    background-color: white;
-    margin-top: 30px;
-    font-size: 20px;
-    padding: 8px 8px;
-    transition: 0.5s;
-    border: 0;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.action:hover {
-    transform: scale(1.1);
-}
 /*Fim das fotografias e projetos*/
 /*Início Modalidades*/
 .style{
@@ -208,22 +214,34 @@ body {
 }
 
 .list-style {
-    display: flex;
     list-style: none;
     align-items: center;
+    display: flex;
 }
 .list-style li {
-    background-color: ;
     padding: 8px 8px;
     border-radius: 50px;
     margin: 40px;
     font-size: 20px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .list-style li:hover {
     transform: scale(1.1);
-    font-size: 22px;
+}
+.action {
+    background-color: white;
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 8px 8px;
+    transition: 0.5s;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.action:hover {
+    transform: scale(1.1);
 }
 /*Fim de Modalidades*/
 
