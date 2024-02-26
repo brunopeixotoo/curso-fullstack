@@ -20,6 +20,7 @@ body {
     top: 0;
     display: flex;
     justify-content: flex-end;
+    z-index: 9;
     
 }
 
@@ -50,6 +51,8 @@ body {
     background-color: black;
     height: calc(100vh - 80px);
     background-image: url("../imagem/inicio.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     padding-left: 10%;
@@ -99,8 +102,8 @@ body {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,6 +112,7 @@ body {
 .about div {
     max-width: 50%;
     padding-right: 40px;
+
 }
 
 .about img{
@@ -119,4 +123,152 @@ body {
 .about h2 {
     font-size: 32px;
     margin-bottom: 14px;
+}
+/*Fim do "Sobre"*/
+/*Início dos Projetos*/
+
+.projects {
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.projects h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 14px;
+    margin-top: 20px;
+}
+
+.projects p {
+    color: white;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.project-list {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list img{
+    max-width: 22%;
+    align-items: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.project-list img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.action {
+    background-color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 8px 8px;
+    transition: 0.5s;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.action:hover {
+    transform: scale(1.1);
+}
+/*Fim das fotografias e projetos*/
+/*Início Modalidades*/
+.style{
+    background-color:  rgb(255, 230, 0);
+    width: 100%;
+    padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.style h2 {
+    padding-bottom: 14px;
+    font-size: 32px;
+   
+}
+.style p {
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+.list-style {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.list-style li {
+    background-color: ;
+    padding: 8px 8px;
+    border-radius: 50px;
+    margin: 40px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.list-style li:hover {
+    transform: scale(1.1);
+    font-size: 22px;
+}
+/*Fim de Modalidades*/
+
+/*Início de Professores*/
+.teacher {
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+
+}
+
+/*Foto anterior ao Footer*/
+.foto {
+    width: 100%;
+    background-color: black;
+    height: calc(70vh - 80px);
+    background-image: url("../imagem/imagem9.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+/*Início do Rodapê*/
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(54, 54, 54);
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    margin-left: 12px;
+}
+footer h6 {
+    margin-top: 60px;
+    padding-bottom: 0;
 }
