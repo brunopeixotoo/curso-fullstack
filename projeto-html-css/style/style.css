@@ -248,7 +248,10 @@ body {
 /*Início de Professores*/
 .teacher {
     width: 100%;
-    background-color: rgb(54, 54, 54);
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
