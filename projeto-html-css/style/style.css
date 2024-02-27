@@ -11,6 +11,10 @@ body {
     
 }
 
+/*Fazer com que o direcionamento dos itens do cabeçalho sejam suaves*/
+html {
+    scroll-behavior: smooth;
+}
 /*Início Header*/
 .nav {
     background-color: rgb(54, 54, 54);
@@ -112,12 +116,13 @@ body {
 .about div {
     max-width: 50%;
     padding-right: 40px;
+    text-align: justify;
 
 }
 
 .about img{
     max-width: 300px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .about h2 {
@@ -128,7 +133,7 @@ body {
 /*Vídeo*/
 .video{
     width: 100%;
-    background-color: rgb(255, 230, 0);
+    background-color: rgb(231, 209, 7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,7 +199,7 @@ body {
 /*Fim das fotografias e projetos*/
 /*Início Modalidades*/
 .style{
-    background-color:  rgb(255, 230, 0);
+    background-color:  rgb(231, 209, 7);
     width: 100%;
     padding: 80px 80px;
     display: flex;
@@ -219,9 +224,9 @@ body {
     display: flex;
 }
 .list-style li {
+    font-weight: bold;
     padding: 8px 8px;
-    border-radius: 50px;
-    margin: 40px;
+    margin: 50px;
     font-size: 20px;
     transition: 0.5s;
     cursor: pointer;
@@ -232,13 +237,16 @@ body {
 }
 .action {
     background-color: white;
+    font-weight: bold;
     margin-top: 30px;
-    font-size: 16px;
-    padding: 8px 8px;
+    font-size: 20px;
+    padding: 10px 15px;
     transition: 0.5s;
     border: 0;
     border-radius: 50px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 .action:hover {
     transform: scale(1.1);
@@ -251,8 +259,33 @@ body {
     background-color:white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+}
+.teacher h2 {
+    font-size: 32px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    
+}
+.teacher div{
+    max-width: 50%;
+    padding-right: 40px;
+    text-align: justify;
 
+}
+.teacher p{
+    margin-bottom: 40px;
+}
+
+.teacher img{
+    max-width: 20%;
 }
 
 /*Foto anterior ao Footer*/
@@ -292,4 +325,79 @@ footer p{
 footer h6 {
     margin-top: 60px;
     padding-bottom: 0;
+}
+
+/*RESPONSIVIDADE*/
+
+/*A partir desse ponto, aqui será aplicado novas formatações de CSS na tela*/
+@media (max-width: 1000px){
+    
+    /*Iníco MAIN*/
+    .main h1{
+        font-size: 45px;
+    }
+    .main p{
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+    /*Fim MAIN*/
+
+    /*Início SOBRE*/
+    .about {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about div{
+        max-width: 80%;
+    }
+    .about div h2{
+        font-size: 45px;
+    }
+    .about img {
+        max-width: 70%;
+        margin-top: 30px;
+    }
+    /*Início VÍDEO*/
+    .video h2{
+        padding-left: 20px;
+    }
+
+    /*Início PROJETOS*/
+
+    .projects img{
+        width: 27.5%;
+    }
+
+    /*Início MODALIDADES*/
+    .list-style{
+        display: block;
+    }
+
+    .style a{
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+    /*Início Imagem*/
+    .foto{
+        height: 300px;
+    }
+    /*Início RODAPÊ*/
+    footer{
+        flex-direction: column;
+    }
+    footer h3{
+        font-size: 16px;
+    }
+    footer p{
+        margin: 0;
+        font-size: 12px;
+    }
+    footer h6{
+        font-size: 10px;
+    }
 }
