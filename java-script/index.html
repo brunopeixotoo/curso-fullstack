@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Curso de Programação</title>
 </head>
 <body>
 
-    <h2 id="area">Bem Vindo!</h2>
-    
-    <button onclick="entrar()"> Entrar</button>
+    <section class="container">
+        <h1 class="title">Calculadora de IMC</h1>
 
-    <script src="./java-script/teste.js"></script>
+        <form onsubmit="return calcular(event)" class="form" action="">
+            <label for="">Digite seu peso</label> <br>
+            <input type="text" name="peso" id="peso" placeholder="Exemplo: 65">
+            <label for="">Digite sua altura</label>
+            <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.75">
+            
+            <input type="submit" value="Calcular">
+        </form>
+
+        <div id = "resultado"></div>
+
+    </section>
+    <script src="./assets/js/teste.js"></script>
 </body>
 </html>
