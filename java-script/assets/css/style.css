@@ -1,1 +1,26 @@
+* {
+    margin: 0 auto;
+    width: 100%;
+}
 
+ul {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+}
+
+li {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+img {
+    margin: 10px 0;
+    border-radius: 4px;
+
+}

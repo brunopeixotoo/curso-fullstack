@@ -3,7 +3,7 @@
 
 //URL: https://sujeitoprogramador.com/rn-api/?api=posts
 
-let listElement = document.querySelector("#app");
+let listElement = document.querySelector("#app");//Acionando elemento
 
 let posts = [];
 
@@ -14,23 +14,25 @@ function nutriApp() {
     .then((json) => {
         posts = json;
         
-        posts.map((item) => {
-            console.log(item.titulo);
+        posts.map((item) => {//Percorrendo os itens da API e criando elementos HTML com cada item dentro
+            let liElement = document.createElement("li");
+            let titleElement = document.createElement("strong");
+            let imgElement = document.createElement("img");
+            let descriptionElement = document.createElement("a");
 
-            let liElement = document.createElement('li');
-            listElement.appendChild(liElement);
-
-            let titleElement = document.createElement('strong');
-            let imgElement = document.createElement('img');
-            let description = document.createElement('a');
-
-            let titleText = document.createTextNode(`Título ${item.titulo}`);
+            let titleText = document.createTextNode(item.titulo);
             titleElement.appendChild(titleText);
-            imgElement = item.capa;
+            liElement.appendChild(titleElement);
+
+            imgElement.src = item.capa;
             liElement.appendChild(imgElement);
             
-            let descriptionText = document.createTextNode(`Descrição ${item.subtitulo}`);
-            description.appendChild(descriptionText);
+            let descriptionText = document.createTextNode(item.subtitulo);
+            descriptionElement.appendChild(descriptionText);
+            liElement.appendChild(descriptionElement);
+
+
+            listElement.appendChild(liElement);
 
         })
     })
