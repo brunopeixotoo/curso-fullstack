@@ -1,34 +1,42 @@
 
-var altura;
-var peso;
-var imc;
-var resultado = document.getElementById('resultado');
+// REQUISIÇÕES HTTP
 
-function calcular(event) {
+//URL: https://sujeitoprogramador.com/rn-api/?api=posts
+
+let listElement = document.querySelector("#app");
+
+let posts = [];
+
+function nutriApp() {
     
-    /*Depois que ele finaliza a função, vai aplicar um reset automático */
-    /*Para remover esse reset se usa o método .event.proventDefault() */
-    event.preventDefault();
+    fetch("https://sujeitoprogramador.com/rn-api/?api=posts")
+    .then((response) => response.json())
+    .then((json) => {
+        posts = json;
+        
+        posts.map((item) => {
+            console.log(item.titulo);
 
-    /*Puxando o dado digitado no input do HTML */
-    peso = document.getElementById('peso').value;
-    altura = document.getElementById('altura').value;
-    imc = peso/(altura*altura);
+            let liElement = document.createElement('li');
+            listElement.appendChild(liElement);
 
-    /*Para controlar as casa decimais que serão exibidas */
-    /*é preciso usar o método variavel.toFixed(qntd) */
+            let titleElement = document.createElement('strong');
+            let imgElement = document.createElement('img');
+            let description = document.createElement('a');
 
-    imc = imc.toFixed(2);
+            let titleText = document.createTextNode(`Título ${item.titulo}`);
+            titleElement.appendChild(titleText);
+            imgElement = item.capa;
+            liElement.appendChild(imgElement);
+            
+            let descriptionText = document.createTextNode(`Descrição ${item.subtitulo}`);
+            description.appendChild(descriptionText);
 
-    if (imc < 17) {
-        resultado.innerHTML = "<br> Seu IMC é "+ imc +" e está abaixo do ideal.";
-    } else if(imc >= 18 && imc <= 24) {
-        resultado.innerHTML = "<br> Seu IMC é "+ imc + " e está normal.";
-    } else if (imc > 25 && imc < 29){
-        resultado.innerHTML = "<br> Seu IMC é "+ imc + " e está acima do peso."
-    }
-
-    /*Limpando o campo de preenchimento após as condições serem excutadas */
-    document.getElementById('peso').value = '';
-    document.getElementById('altura').value = '';
+        })
+    })
+    .catch(() => {
+        console.log('DEU ERRO');
+    })
 }
+
+nutriApp();
